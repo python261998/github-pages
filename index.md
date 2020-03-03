@@ -17,7 +17,9 @@
     preload="auto"
     poster="//vjs.zencdn.net/v/oceans.png"
     data-setup='{}'>
-  <source src="https://f.video.weibocdn.com/rYUnLlWalx07BpobEI7601041200GAGn0E010.mp4" type="video/mp4"></source>
+  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+  <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
   
   <p class="vjs-no-js">
     To view this video please enable JavaScript, and consider upgrading to a
