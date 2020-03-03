@@ -16,7 +16,7 @@
     		<object data="movie.mp4" width="320" height="240">    
         		<embed src="movie.swf" width="320" height="240">  
     		</object> 
-		</video>
+	    </video>
  
    
 	</body>
