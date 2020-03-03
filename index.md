@@ -5,8 +5,8 @@
 
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+	    <link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+            <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
 	</head>
 	<body>
 	    <video
