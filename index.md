@@ -4,31 +4,43 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>video.js</title>
-
-    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
-    <!-- If you'd like to support IE8 -->
-    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="video-js/video-js.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script>
+<script src="video-js/ie8/videojs-ie8.js"></script>
+<!-- 加载hls视频插件 -->
+<script src="video-js/videojs-contrib-hls.js"></script>
+<!-- 加载flash播放器 -->
+<script type="text/javascript">
+videojs.options.flash.swf = "static/video-js/video-js.swf";
+</script>
 </head>
 <body>
 
-  <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" width="640" height="264"
-  poster="D:\CloudMusic\MV\jay.zhou.jpg" data-setup='{ "controls": true, "autoplay": true, "preload": "auto" }'>
-    <!--MP4的数据源-->
-    <source src="https://github.com/python261998/python261998.github.io/blob/master/WeChat_20200227095515.mp4" type='video/mp4'>
-    
-    <track kind="subtitles" label="Chinese subtitles" src="D:\CloudMusic\MV\st.vtt"
-   srclang="zh" label="Chinese">
-    
-  </video>
+<div id="videocontainer">
+<video id="example_video" class="video-js vjs-default-skin vjs-big-play-centered"
+preload="auto" controls
+width="800" height="600" align="middle" poster=""
+data-setup="{ &quot;html5&quot; : { &quot;nativeTextTracks&quot; : false } }">
+<source src="https://github.com/python261998/python261998.github.io/blob/master/WeChat_20200227095515.mp4" type="video/mp4"/>
+<!-- 加载hls视频-->
+<source src="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8"
+type="application/x-mpegURL">
+<!-- 加载rtmp视频-->
+<source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv"/>
+</video>
 
-  <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
-
+</div>
+</div>
 </body>
+
 </html>
+
 
 
 
